@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+body {
+  background: linear-gradient(to right, #2e026d, #5e60ce);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Vergilia';
+  src: url('./Assets/Fonts/Vergilia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+@font-face {
+  font-family: 'BungaZivilia';
+  src: url('./Assets/Fonts/BungaZivilia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: 'Sinosans Regular';
+  src: url('./Assets/Fonts/SinosansRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-margin {
+  margin-top: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.font-1 {
+  font-family: 'Sinosans Regular', sans-serif;
 }
+
+.font-2 {
+  font-family: 'Vergilia', sans-serif;
+}
+
+.font-3 {
+  font-size: 'BungaZivilia', sans-serif;
+}
+
+.font-4 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.bg-1 {
+  background-color: rgb(0, 255, 128);
+}
+
+.bg-2 {
+  background-color: rgb(218, 255, 236);
+}
+
