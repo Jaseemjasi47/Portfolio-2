@@ -1,5 +1,7 @@
 body {
   background: linear-gradient(to right, #2e026d, #5e60ce);
+  /* background: rgb(253, 255, 139); */
+  user-select: none;
 }
 
 @font-face {

@@ -1,136 +1,207 @@
 /* Navbar Container */
 .navbar {
-    position: fixed;
-    top: 10px; /* Adjusts from the top with some spacing */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80vw;
-    margin: 0 auto;
-    display: flex;
-    border-radius: 15px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #2e026d; /* Dark fantasy color */
-    background: linear-gradient(to right, rgba(47, 2, 109, 0.432), rgba(94, 96, 206, 0.349));
-    backdrop-filter: blur(8px); /* Adds blur to the background */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    z-index: 2000;
-  }
-  
-  
-  /* Left Section (Search Icon) */
-  .nav-01 {
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #a78bfa;
-    backdrop-filter: blur(8px); 
-    /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); */
-  }
-
-  .nav-01 svg {
-    padding: 5px;
-  }
-  
-  .nav-01 svg:hover {
-    fill: #5e60ce; /* Light purple on hover */
-  }
-  
-  /* Right Section */
-  .nav-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Notification Icon */
-  .nav-02 {
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #a78bfa;
-    backdrop-filter: blur(8px); /* Adds blur to the background */
-    /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); */
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .nav-02 svg {
-    padding: 5px;
-  }
-  
-  .nav-02 svg:hover {
-    fill: #5e60ce; /* Light purple on hover */
-  }
-  
-  /* Profile Section */
-  .nav-03 {
-    display: flex;
-    align-items: center;
-    /* margin: 0 10px; */
-    color: #ffffff9c;
-    font-size: 1rem;
-  }
-  
-  /* Profile Image */
-  .nav-03 img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin-left: 5px;
-    border: 2px solid #a57eff6c;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .nav-03 img:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Text Styling */
-  .nav-03 p {
-    margin: 0;
-    color: #ffffff9c;
-    font-weight: bold;
-  }
-  
-  .nav-03 p:hover {
-    color: #ffffff; /* Brighter on hover */
-  }
+  position: fixed;
+  top: 10px;
+  /* Adjusts from the top with some spacing */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  /* margin: 0 auto; */
+  display: flex;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #2e026d;
+  /* Dark fantasy color */
+  background: linear-gradient(to right, rgba(47, 2, 109, 0.432), rgba(94, 96, 206, 0.349));
+  /* background: linear-gradient(to right, rgba(251, 255, 0, 0.432), rgba(195, 206, 94, 0.349)); */
+  border: .5px solid white;
+  backdrop-filter: blur(8px);
+  /* Adds blur to the background */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  z-index: 2000;
+}
 
 
-  .down-bar {
-    position: fixed;
-    bottom: 15px; /* Adjust the distance from the bottom */
-    right: 15px;  /* Adjust the distance from the right */
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: linear-gradient(to right, rgba(47, 2, 109, 0.432), rgba(94, 96, 206, 0.349)); /* Corrected to use 'background' */
-    backdrop-filter: blur(8px); /* Adds blur to the background */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for depth */
-    display: flex; /* Center the SVG inside */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    transition: transform 0.3s; /* Smooth transition for scale and rotation */
+/* Left Section (Search Icon) */
+
+/* Profile Image */
+.nav-01 img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  /* margin-left: 5px; */
+  border: .5px solid white;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.nav-01 img:hover {
+  transform: scale(1.1);
+}
+
+
+.nav-031 {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: .5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #a78bfa;
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.nav-031 svg {
+  color: #a78bfa;
+  animation: shake 1.5s ease-in-out infinite; /* Initial state is paused */
+}
+
+@keyframes shake {
+  0% { transform: rotate(0); }
+  24% { transform: rotate(0); }
+  40% { transform: rotate(-10deg); }
+  45% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  55% { transform: rotate(0deg); }
+  100% { transform: rotate(0); }
+}
+
+
+/* Add a transition for hover or additional effects */
+.nav-031 svg:hover {
+  color: #f0e7db;
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Notification Icon */
+.nav-02 {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #a78bfa;
+  backdrop-filter: blur(8px);
+  /* Adds blur to the background */
+  /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); */
+  cursor: pointer;
+  position: relative;
+}
+
+/* Profile Section */
+.nav-03 {
+  display: flex;
+  align-items: center;
+  /* margin: 0 10px; */
+  color: #ffffff9c;
+  font-size: 1rem;
+}
+
+
+
+/* Text Styling */
+.nav-03 p {
+  margin: 0;
+  color: #ffffff9c;
+  font-weight: bold;
+}
+
+.nav-03 p:hover {
+  color: #ffffff;
+  /* Brighter on hover */
+}
+
+
+.down-bar {
+  position: fixed;
+  bottom: 15px;
+  /* Adjust the distance from the bottom */
+  right: 15px;
+  /* Adjust the distance from the right */
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(47, 2, 109, 0.432), rgba(94, 96, 206, 0.349));
+  /* Corrected to use 'background' */
+  backdrop-filter: blur(8px);
+  /* Adds blur to the background */
+  /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); */
+  /* Optional: adds shadow for depth */
+  display: flex;
+  /* Center the SVG inside */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  transition: transform 0.3s;
+  /* Smooth transition for scale and rotation */
 }
 
 .down-bar:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .down-bar svg {
-    rotate: 180deg;
+  rotate: 180deg;
 }
 
-.down-bar.rotate {
-    transform: rotate(180deg); /* Rotate the down bar when toggled */
+.down-bar.rotate{
+  transform: rotate(180deg);
+  /* Rotate the down bar when toggled */
 }
 
 
 
-  
+.my-navbar-toggle {
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 5px;
+  gap: 5px;
+  z-index: 1001;
+}
+
+.my-toggle-bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  background: linear-gradient(to Left, rgb(236, 223, 255), rgb(153, 155, 255));
+  border: .2px solid rgba(255, 255, 255, 0.411);
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+
+.my-toggle-bar.rotate {
+  transform: rotate(45deg) translate(6px, 6px);
+  /* Adjusted for a cleaner cross */
+}
+
+.my-toggle-bar.hide {
+  opacity: 0;
+  /* Hides the middle bar if there's a third bar */
+}
+
+.my-toggle-bar.rotate-reverse {
+  transform: rotate(-45deg) translate(5px, -5px);
+  /* Matches opposite angle of rotation */
+}
+
+.my-navbar-toggle {
+  display: flex;
+}
